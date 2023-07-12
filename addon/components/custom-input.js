@@ -1,7 +1,9 @@
 import component from '@glimmer/component';
+import { action } from '@ember/object';
+
 export default class CustomInputComponent extends component{
-    constructor(){
-        super(...arguments);
-        console.log("hello")
+    @action
+    onInput(ev){
+        this.args.onInput(ev.target.value);
     }
 }
