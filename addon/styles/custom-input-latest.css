@@ -7,3 +7,9 @@
   width: 250px;
   height: 32px;
 }
+
+.error {
+  margin-top: 4px;
+  color: red;
+  display: block;
+}
